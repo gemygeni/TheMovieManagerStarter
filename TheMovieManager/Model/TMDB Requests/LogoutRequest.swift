@@ -8,4 +8,13 @@
 
 import Foundation
 
+struct LogoutRequest : Codable {
+    let session_id : String
+    
+    enum codingkeys : String , CodingKey{
+        case session_id = "sessionID"
+    }
+    
+    
+}
 
